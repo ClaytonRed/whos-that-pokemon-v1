@@ -26,7 +26,7 @@ const resultDisplay = document.getElementById('resultDisplay')
 const soundBite = document.getElementById('soundBite')
 const pokemonCry = document.getElementById('pokemonCry')
 
-const printButton = document.getElementById('printButton')
+// const printButton = document.getElementById('printButton')
 
 
 // PokemonData Array //
@@ -40,9 +40,9 @@ const PokemonData = [
     {dex: '078', name: 'rapidash', image: 'pokemon-images/rapidash-img.png', type: 'fire', cry: 'audio/pokemon-cries/cries_rapidash.ogg'},                  // 06
     {dex: '099', name: 'kingler', image: 'pokemon-images/kingler-img.png', type: 'water', cry: 'audio/pokemon-cries/cries_kingler.ogg'},                    // 07
     {dex: '131', name: 'lapras', image: 'pokemon-images/lapras-img.png', type: 'water / ice', cry: 'audio/pokemon-cries/cries_lapras.ogg'},                 // 08
-    {dex: '143', name: 'snorlax', image: 'pokemon-images/snorlax-img.png', type: 'normal', cry: 'audio/pokemon-cries/cries_snorlax.ogg'},                   // 09
+    // {dex: '143', name: 'snorlax', image: 'pokemon-images/snorlax-img.png', type: 'normal', cry: 'audio/pokemon-cries/cries_snorlax.ogg'},                   // 09
 
-    //{dex: '039', name:'jigglypuff from above', image:'pokemon-images/jigglypuff-from-above-img.png', type:'electric', cry:'audio/pokemon-cries/cries_voltorb.ogg'},
+    {dex: '039', name:'jigglypuff from above', image:'pokemon-images/jigglypuff-from-above-img.png', type:'electric', cry:'audio/pokemon-cries/cries_voltorb.ogg'},
 
     {dex: '154', name: 'meganium', image: 'pokemon-images/meganium-img.png', type: 'grass', cry: 'audio/pokemon-cries/cries_meganium.ogg'},                 // 10
     {dex: '155', name: 'cyndaquil', image: 'pokemon-images/cyndaquil-img.png', type: 'fire', cry: 'audio/pokemon-cries/cries_cyndaquil.ogg'},               // 11
@@ -104,7 +104,7 @@ userTextInput.addEventListener('keypress', function (e)
     }
 )
 
-printButton.addEventListener('click', PrintToConsole)
+// printButton.addEventListener('click', PrintToConsole)
 
 // Functions //
 function StartGame() {
@@ -214,7 +214,6 @@ function CheckAnswer(userAnswer, pokemonToInclude) {
     checkAnswerButton.disabled = true
     checkAnswerButton.classList.add("disabledButton")
     userTextInput.disabled = true
-    // resultDisplay.classList.remove("hidden")
 }
 
 function HandleScore(int) {
@@ -309,35 +308,35 @@ function HandleHiddenClass(start) {
     }
 }
 
-function PrintToConsole() {
+// function PrintToConsole() {
 
-    // Checkbox Checker
-    // if (gen1Checkbox.checked == true)
-    //     console.log("gen1 true")
-    // else
-    //     console.log("gen1 false")
+//     // Checkbox Checker
+//     if (gen1Checkbox.checked == true)
+//         console.log("gen1 true")
+//     else
+//         console.log("gen1 false")
     
-    // if (gen2Checkbox.checked == true)
-    //     console.log("gen2 true")
-    // else
-    //     console.log("gen2 false")
+//     if (gen2Checkbox.checked == true)
+//         console.log("gen2 true")
+//     else
+//         console.log("gen2 false")
 
-    // if (gen3Checkbox.checked == true)
-    //     console.log("gen3 true")
-    // else
-    //     console.log("gen3 false")
+//     if (gen3Checkbox.checked == true)
+//         console.log("gen3 true")
+//     else
+//         console.log("gen3 false")
 
-    // if (gen4Checkbox.checked == true)
-    //     console.log("gen4 true")
-    // else
-    //     console.log("gen4 false")
+//     if (gen4Checkbox.checked == true)
+//         console.log("gen4 true")
+//     else
+//         console.log("gen4 false")
 
-    // Debug Console.Logs
-    console.log(`pokemon included in this round are:`)
-    console.log(pokemonToInclude)
-    console.log(`usedPokemon array size: ${usedPokemon.length}`)
-    console.log(usedPokemon)
-    console.log(`the current pokemon is: ${pokemonToInclude[currentPokemonIndex].name}`)
-    console.log(`the current pokemon's index is: ${currentPokemonIndex}`)
-    console.log(`first letter of type: ${pokemonToInclude[currentPokemonIndex].type.charAt(0)}`)
-}
+//     // Debug Console.Logs
+//     console.log(`pokemon included in this round are:`)
+//     console.log(pokemonToInclude)
+//     console.log(`usedPokemon array size: ${usedPokemon.length}`)
+//     console.log(usedPokemon)
+//     console.log(`the current pokemon is: ${pokemonToInclude[currentPokemonIndex].name}`)
+//     console.log(`the current pokemon's index is: ${currentPokemonIndex}`)
+//     console.log(`first letter of type: ${pokemonToInclude[currentPokemonIndex].type.charAt(0)}`)
+// }
