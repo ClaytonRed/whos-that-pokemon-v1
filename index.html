@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/x-icon" href="icons/icons8-pokemon-pulsar-gradient-96.png">
+    <title>Who's That Pokémon?</title>
+</head>
+<body>
+
+    <h1 class="title">Who's That Pokémon?</h1>
+
+    <div id="imageWrapper" class="imageWrapper hidden">
+        <img id="mainImage" class="hidden" src="" alt="">
+    </div>
+    
+    <div class="checkBoxes" id="checkboxContainer">
+        <h2 class="">Pokémon to include:</h2>
+        <input type="checkbox" name="gen1" id="gen1Checkbox" value="gen1" checked>
+        <label for="gen1Checkbox">1st Generation</label>
+
+        <input type="checkbox" name="gen2" id="gen2Checkbox" value="gen2" checked>
+        <label for="gen2Checkbox">2nd Generation</label>
+
+        <input type="checkbox" name="gen3" id="gen3Checkbox" value="gen3" checked>
+        <label for="gen3Checkbox">3rd Generation</label>
+        
+        <input type="checkbox" name="gen4" id="gen4Checkbox" value="gen4" checked>
+        <label for="gen4Checkbox">4th Generation</label>
+
+    </div>
+
+    <h2 class="includeTitle hidden" id="checkboxWarning">You need to select at least one generation of Pokémon!</h2>
+    <button id="startGameButton">Start Game!</button>
+
+    <!-- <div class="container01"> -->
+        <input id="userTextInput" class="hidden" type="text" placeholder="...">     
+    <!-- </div> -->
+
+    <h1 id="scoreText" class="hidden" >Score:</h1>    
+
+    <h2 class="" id="resultDisplay"></h2>
+
+    <div class="buttonContainer">
+        <button id="newPokemonButton" class="hidden"></button>
+        <button id="checkAnswerButton" class="hidden">check answer</button>
+        <button id="clueButton" class="hidden">show clues</button>
+        <button id="printButton">console.log</button>
+    </div>
+
+    <div class="clueContainer hidden" id="clueContainer">
+        <button id="typeClue" class="clueButton hidden">what type is it?</button>
+        <button id="cryClue" class="clueButton hidden">play it's cry</button>
+        <h2 id="typeText" class="hidden"></h2>
+    </div>
+
+    <audio id="soundBite" src="audio/whos-that-pokemon.mp3"></audio>
+    <audio id="pokemonCry" src=""></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
